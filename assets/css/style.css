@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Markazi Text', serif;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    height: 5em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.bg {
+    background-image: url("https://i.pinimg.com/originals/9d/eb/08/9deb08cbac490f5fa43032499f61c581.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#site-header {
+    padding: 12px;
+}
+
+#game-container {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    background: #444;
+    width: 800px;
+    height: 550px;
+    border: 2px #fff dashed;
+    text-align: center;
+}
+
+#game-rule {
+    margin-top: 15px;
+}
+
+#word-container {
+    margin: auto;
+    height: 150px;
+    width: 650px;
+    background-color: #333;
+    border: 2px #fff solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#userguesses {
+    margin: auto;
+    height: 125px;
+    width: 550px;
+    background-color: #333;
+    border: 2px #fff solid;
+    margin-top: 15px;
+}
