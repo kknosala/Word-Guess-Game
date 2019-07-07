@@ -3,6 +3,7 @@
 
 var wordChoice = ['angola', 'germany', 'micronesia', 'philippines', 'uzbekistan']
 var wordChoiceText = "";
+var wordChoiceUnderscore = [];
 var guessesLeft = 10;
 
 var playerGuessesText = document.getElementById('guesses-made');
@@ -16,16 +17,23 @@ function wordGenerator(){
     var gameWord = wordChoice[Math.floor(Math.random() * 5)];
 
     for(var i = 0; i < gameWord.length; i++){
-        wordChoiceText = gameWord[i];
-        wordChosenText.textContent += wordChoiceText;
+        wordChoiceText += gameWord[i];
+        console.log(wordChoiceText);
     }
+
+    for(var i = 0; i < wordChoiceText.length; i++){
+        wordChoiceUnderscore.push('_');
+        console.log(wordChoiceUnderscore);
+    }
+    wordChosenText.textContent = wordChoiceUnderscore;
 
 }
 
 function resetGame(){
-    
+
     wordChoiceText = '';
-    wordChosenText.textContent = wordChoiceText;
+    wordChoiceUnderscore = [];
+    wordChosenText.textContent = wordChoiceUnderscore;
     wordGenerator();
     playerGuess = '';
     playerGuessesText.textContent = playerGuess;
